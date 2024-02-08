@@ -1,0 +1,55 @@
+.sidebar-component {
+    width: 100%;
+    height: 100vh;
+    
+    color: white;
+    overflow-y: auto  ; /* Agregar barra de desplazamiento vertical */
+    z-index: 999; /* Asegúrate de que sea inferior al header pero lo suficientemente alto para estar por delante de otros elementos si es necesario */    
+  }
+  
+
+  .menu {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+  }
+  .sub-menu {
+    display: none; 
+    flex-direction: column; /* Muestra los submenús en columnas */
+    background-color: #34495e; /* Fondo del submenú */
+    position: relative; /* Posición relativa para no superponer los submenús */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el submenú */
+    padding-left: 20px;
+  }
+  
+  .sub-menu-item {
+    display: flex;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 8px; /* Añade un espacio interno al submenú item */
+  }
+  
+  .sub-menu.show {
+    display: flex;
+  }
+  
+  .rotate-arrow {
+    transform: rotate(90deg);
+  }
+  .arrow{
+    margin-left: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .sub-menu-item:hover {
+    background-color: #2c3e50; /* Cambia el color de fondo al pasar el ratón */
+  }
