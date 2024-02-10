@@ -15,7 +15,7 @@ body {
     justify-content:center;
     align-items: center;
     padding: 2rem;
-    background-color: var(--navbar-color);
+    background-image: url(/images/headerWindows.jpg);
     color: var(--text-color);
     height: 5vh;
     width: auto;
@@ -45,7 +45,9 @@ ul {
 }
 
 .nav-links a {
-    color: white;
+    color: red;
+    font-weight: 700;
+    font-size: 1.5rem;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
 }
