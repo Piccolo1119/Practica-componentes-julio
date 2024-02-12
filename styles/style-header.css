@@ -12,7 +12,7 @@ body {
     
 .navbar {
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
     background-image: url(/images/headerWindows.jpg);
@@ -45,8 +45,13 @@ ul {
 }
 
 .nav-links a {
-    color: red;
-    font-weight: 700;
+    color: salmon;
+    font-weight: bolder;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
     font-size: 1.5rem;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
@@ -71,6 +76,11 @@ ul {
 
 .content {
     padding: 20px;
+}
+
+.login {
+    height: 5vh;
+    
 }
 
 @media (width <= 768px) {

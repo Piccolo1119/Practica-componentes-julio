@@ -15,10 +15,12 @@ body {
 .sidebar {
     grid-area: sidebar;
     height: 100vh;
-    background-color: #C0C0C0;
+    background-color: salmon;
+    border: 2px solid red;
 }
 
 .content {
     grid-area: content;
     height: 100vh;
+    background-color: rgb(245, 245, 247);
 }
