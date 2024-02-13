@@ -28,7 +28,7 @@
   .sub-menu {
     display: none; 
     flex-direction: column; /* Muestra los submenús en columnas */
-    background-color: #34495e; /* Fondo del submenú */
+    background-color: silver; /* Fondo del submenú */
     position: relative; /* Posición relativa para no superponer los submenús */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el submenú */
     padding-left: 20px;
@@ -47,6 +47,7 @@
   
   .rotate-arrow {
     transform: rotate(90deg);
+    transition: transform 0.3s ease;
   }
   .arrow{
     margin-left: auto;
@@ -54,7 +55,8 @@
   }
   
   .sub-menu-item:hover {
-    background-color: #2c3e50; /* Cambia el color de fondo al pasar el ratón */
+    background-color: rgb(84, 156, 228);
+    color: white; /* Cambia el color de fondo al pasar el ratón */
   }
 
 

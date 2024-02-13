@@ -1,0 +1,64 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-formulario {
+    display: inline-block; /* Hace que el contenedor se ajuste al ancho del texto */
+    margin-top: 100px;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 50px; /* Opcional: Agrega un espacio alrededor del contenido */
+    max-width: 100%; /* Limita el ancho máximo al tamaño del contenedor padre */
+}
+
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: salmon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen {
+    background-image: url("/images/maradona.gif");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 600px;
+  }
+  
+  h1 {
+    color: blueviolet;
+  }

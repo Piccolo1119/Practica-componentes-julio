@@ -14,10 +14,10 @@
     <header class="navbar">
         <img src="/images/logomaiztransparente.ico" alt="Logo de la empresa" class="logo" >
         <ul class="nav-links">
-            <li><a href="#">Inicio de mi Cuaderno de Entorno Servidor</a></li>
+            <li><a href="index.html">Inicio de mi Cuaderno de Entorno Servidor</a></li>
         </ul>
         <img src="/images/burger.png" alt="menu-hamburguesa" class="hamburger">
-        <img src="/images/loginbien-Photoroom.png-Photoroom.png" alt="carrito" class="login">
+        <a href="/login.html"><img src="/images/loginbien-Photoroom.png-Photoroom.png" alt="carrito" class="login"></a>
     </header>
     <main>
        <div class="grid-container">
@@ -31,93 +31,43 @@
                 
                 <div class="sub-menu" id="file-menu">
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <span class="menu-text">Open Window</span>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="openWindow()">Open new window</button>
                     </div>
 
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Close Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="closeWindow()">Close new window</button>
                     </div>
                   
                   <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Move Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                    <button onclick="moveWindowTo()">Move new window</button>
                     </div>
 
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Resize Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="resizeWindow()">Resize new window</button>
                     </div>
                   
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Scroll Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="scrollWindowBy()">Scroll new window</button>
                     </div>
                     
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Prompt Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="printWindow()">Print new window</button>
                     </div>
                   
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Print Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="promptWindow()">Introduce datos</button>
                     </div>
                   
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Prompt Window</div>
-                        <span class="arrow">▶️</span>
-                    </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                      <button onclick="blurWindow()">Retira el foco de una ventana</button>
                     </div>
                   
                     <div class="sub-menu-item nested" data-submenu="nested-menu">
-                        <div class="sub-menu-item">Blur Window</div>
-                        <span class="arrow">▶️</span>
+                      <button onclick ="scrollWindow()">Mueve la pantalla al principio</button>
                     </div>
-                    <div class="sub-menu" id="nested-menu">
-                        <div class="sub-menu-item">Item 1</div>
-                        <div class="sub-menu-item">Item 2</div>
-                        <div class="sub-menu-item">Exit</div>
+                    
+                    <div class="sub-menu-item nested" data-submenu="nested-menu">
+                      <button onclick="confirmWindow()">Confirma una operacion</button>
                     </div>
               </div>
             </div>
@@ -163,8 +113,10 @@
       </div>
 
       <div class="content">
-        <h2>En la lista de la izquierda encontrarás todos lo trabajado en el trimestre.</h2>
-        <h4>¡Pruebalos!</h4>
+        <h1>¡Bienvenido a tu cuaderno de entorno servidor!</h1>
+        <h2><u>En la lista de la izquierda encontrarás todo lo trabajado en el trimestre.</u></h2>
+        <h3>¡Pruebalos!</h3>
+        <img src="/images/maradona.gif" alt="maradroga" class="maradroga">
       </div>
       
               

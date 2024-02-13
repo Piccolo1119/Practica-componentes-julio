@@ -5,7 +5,15 @@ const arrows = document.querySelectorAll('.arrow');
         const subMenu = this.parentElement.nextElementSibling; // El submenú asociado a la flecha
         subMenu.classList.toggle('show');
         this.classList.toggle('rotate-arrow');
+        
+        const menuText = this.parentElement.querySelector('.menu-text').textContent;
+        // Obtén el texto dentro del elemento con la clase .menu-text
 
+        if (menuText.trim() === "Window Objects") {
+            const contentElement = document.querySelector('.content');
+            contentElement.innerHTML =  '<h1>Ahora vas a ver lo que pasa con los objetos window</h1><h3>Prueba cada uno de los métodos indicados en la barra de la izquierda</h3>';
+        // Aquí puedes hacer lo que necesites con el texto específico para "Window Objects"
+        }
 
       });
     });
@@ -103,5 +111,57 @@ const arrows = document.querySelectorAll('.arrow');
             const contentElement = document.querySelector('.content');
             contentElement.innerHTML =  '<h2>Información de pantalla</h2>' +'<div class="pantalla-info">'+ infoNavegador + '</div>';
         })
-    })
+    });
+
+
+    var newWindow;
+
+    function openWindow() {
+        newWindow = window.open(" "," ", "width = 500px, height = 400px, left = 50px, top = 300px");
+    }
+
+    function closeWindow() {
+        newWindow.close();
+    }
+
+    function moveWindowTo() {
+        newWindow.moveTo(500,300);
+        newWindow.focus();
+    }
+
+    function resizeWindow() {
+        newWindow.resizeTo(1000,500);
+        newWindow.focus();
+    }
+
+    function scrollWindowBy() {
+        newWindow.focus();
+        newWindow.scrollBy(0,100);
+    }
+
+    function printWindow() {
+        newWindow.focus();
+        newWindow.print();
+    }
+
+    function promptWindow() {
+        newWindow.focus();
+        var result = newWindow.prompt("Introduce datos", "10");
+        alert(result);
+    }
+
+    function blurWindow() {
+        newWindow.focus();
+        newWindow.blur();
+    }
+
+    function scrollWindow() {
+        newWindow.focus();
+        newWindow.scrollTo(0,newWindow.document.body.scrollHeight);
+    }
+
+    function confirmWindow() {
+        newWindow.focus();
+        newWindow.confirm(":)");
+    }
     

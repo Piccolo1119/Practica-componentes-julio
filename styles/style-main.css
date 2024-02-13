@@ -24,3 +24,9 @@ body {
     height: 100vh;
     background-color: rgb(245, 245, 247);
 }
+
+.maradroga {
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
