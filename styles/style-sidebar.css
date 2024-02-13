@@ -28,7 +28,7 @@
   .sub-menu {
     display: none; 
     flex-direction: column; /* Muestra los submenús en columnas */
-    background-color: silver; /* Fondo del submenú */
+    background-color: rgb(246, 243, 237); /* Fondo del submenú */
     position: relative; /* Posición relativa para no superponer los submenús */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el submenú */
     padding-left: 20px;
@@ -59,13 +59,21 @@
     color: white; /* Cambia el color de fondo al pasar el ratón */
   }
 
+  button {
+    border-radius: 10px 20px 10px 20px;
+  }
 
-  .pantalla-info {
+
+  .codebox {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    border-radius: 20px;
-    border: 2px solid red;
-
-
+    align-items: center;
+    background-color: beige;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px dotted black;
+    gap: 1rem;
+  }
+  code {
+    align-self: flex-start;
   }

@@ -4,3 +4,45 @@
     align-items: center;
     
 }
+
+body {
+    text-align: center;
+    
+  }
+  
+  h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px ;
+    background-color: rgb(228, 148, 139);
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #mensaje {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .pantalla-info {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid red;
+
+
+  }
+  

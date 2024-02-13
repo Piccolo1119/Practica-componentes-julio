@@ -7,22 +7,22 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 15% 85%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 100%;
     grid-template-areas: 
         "sidebar content";
 }
 
 .sidebar {
     grid-area: sidebar;
-    height: 110vh;
+    min-height: 100vh; 
     background-color: salmon;
     border: 2px solid red;
 }
 
 .content {
     grid-area: content;
-    height: 100vh;
-    background-color: white;
+    min-height: 100vh; 
+    background-color: rgb(246, 243, 237);
 }
 
 .maradroga {
