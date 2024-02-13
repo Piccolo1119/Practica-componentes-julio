@@ -11,7 +11,7 @@ const arrows = document.querySelectorAll('.arrow');
 
         if (menuText.trim() === "Window Objects") {
             const contentElement = document.querySelector('.content');
-            contentElement.innerHTML =  '<h1>Ahora vas a ver lo que pasa con los objetos window</h1><h3>Prueba cada uno de los métodos indicados en la barra de la izquierda</h3>';
+            contentElement.innerHTML =  '<h1>Ahora vas a ver lo que pasa con los objetos window</h1><h3>Prueba cada uno de los métodos indicados en la barra de la izquierda</h3> <img src="/images/snoopDog.gif" alt="snoopDog">';
         // Aquí puedes hacer lo que necesites con el texto específico para "Window Objects"
         }
 
@@ -61,7 +61,7 @@ const arrows = document.querySelectorAll('.arrow');
     relojitos.forEach(relojito => {
         relojito.addEventListener('click', () => {
             let identificador = window.setInterval(() => {
-                let respuesta = window.confirm("Tienes cita con el dentista mañana a las 12.00. ¿Te los sigo recordando?");
+                let respuesta = window.confirm("Tienes cita con el dentista mañana a las 12.00. ¿Te lo sigo recordando?");
                 if (respuesta === false) {
                     window.clearInterval(identificador);
                     console.log("Programa finalizado");
