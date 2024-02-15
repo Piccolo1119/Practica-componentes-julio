@@ -352,13 +352,13 @@ const arrows = document.querySelectorAll('.arrow');
     //juego adivinar numero
 
     
-    const content = document.querySelector('.content');
+    const contentJuego = document.querySelector('.content');
     const juego = document.querySelectorAll('.arrow.juego');
 
 juego.forEach(juego => {
     juego.addEventListener('click', () => {
         const numeroSecreto = Math.floor(Math.random() * 100) + 1;
-        content.innerHTML = `
+        contentJuego.innerHTML = `
             <div class="pantalla-info">
                 <h1>Adivina el número</h1>
                 <p>Introduce un número entre 1 y 100:</p>

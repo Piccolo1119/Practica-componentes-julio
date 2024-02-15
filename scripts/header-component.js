@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
     <header class="navbar">
         <img src="/images/logomaiztransparente.ico" alt="Logo de la empresa" class="logo" >
         <ul class="nav-links">
-            <li><a href="index.html">Inicio de mi Cuaderno de Entorno Servidor</a></li>
+            <li><a href="index.html">Inicio de mi Cuaderno de Entorno Cliente</a></li>
         </ul>
         <img src="/images/burger.png" alt="menu-hamburguesa" class="hamburger">
         <a href="/login.html"><img src="/images/loginbien-Photoroom.png-Photoroom.png" alt="carrito" class="login"></a>
