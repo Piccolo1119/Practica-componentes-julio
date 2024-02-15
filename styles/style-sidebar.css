@@ -1,14 +1,4 @@
-.sidebar-component {
-    width: 100%;
-    height: 100vh;
-    
-    color: white;
-    overflow-y: auto  ; /* Agregar barra de desplazamiento vertical */
-    z-index: 999; /* Asegúrate de que sea inferior al header pero lo suficientemente alto para estar por delante de otros elementos si es necesario */    
-  }
-  
-
-  .menu {
+.menu {
     padding: 10px;
     cursor: pointer;
   }
@@ -77,3 +67,6 @@
   code {
     align-self: flex-start;
   }
+
+
+
